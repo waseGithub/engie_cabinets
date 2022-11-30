@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# configure address and interval
+addr="192.168.100.6"
+interval=5
+
+# this function converts json for a single card into csv
+function card2csv {
+csv=`echo $1 | jq '.present, .enable, .voltage, .current'`
+csv=`echo $csv | tr -s ' ' ','`
+}
+
+# this function gets json from server and outputs csv log entry
+function logline {
+# get the json
+json=`curl -s $addr/x -m5`
+
+
+# no response? log and bail
+if [ -z "$json" ]
+then
+entry=`date`
+entry="$entry,ERROR"
+echo $entry
+
+return
+fi
+
+# extract root values and card count
+power=`echo $json | jq .power`
+cardCount=`echo $json | jq '.cards | length'`
+
+# build the log entry
+entry=`date`
+entry="$entry,OK,$power,"
+
+# loop over cards, appending csv for each one
+for (( i=0; i<$cardCount; i++ ))
+do
+cardjson=`echo $json | jq .cards[$i]`
+card2csv "$cardjson"
+entry="$entry$csv"
+if (( i < ($cardCount-1) )); then
+entry="$entry,"
+fi
+done
+
+#$entry >> file_6.csv
+echo $entry
+echo $entry >> file_6.csv 
+return
+}
+
+while sleep $interval; do
+logline
+done
