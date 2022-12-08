@@ -7,6 +7,7 @@
 Bittern build
 """
 import datetime
+from datetime import datetime
 import time
 from sys import exit
 import csv
