@@ -182,9 +182,9 @@ while True:
                
                
                
-                flowmeter_info = ['Channel', 'Name', 'timestamp', 'temp(C)', 'pressure(hPa)', 'total_tips_since_start', 'volume_this_tips(ml)', 
-                                  'total_vol_since_start(ml)', 'tips_this_day', 'vol_this_day(ml)', 'tips_this_hour', 'vol_this_hour(ml)', 
-                                  'net_gas_attributable_to_test_sample_since_start(ml/g)']
+                flowmeter_info = ['Channel', 'Name', 'timestamp', 'temp_C', 'pressureh_Pa', 'total_tips_since_start', 'volume_this_tip_ml', 
+                                  'total_vol_since_start_ml', 'tips_this_day', 'vol_this_dayml', 'tips_this_hour', 'vol_this_hourml', 
+                                  'net_gas_attributable_to_test_sample_since_startmlg']
                 while not done:
                     line = ser.readline()
                     line = line.rstrip()
