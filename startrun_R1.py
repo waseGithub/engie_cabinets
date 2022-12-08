@@ -6,8 +6,9 @@
 """
 Bittern build
 """
+
 import datetime
-from datetime import datetime
+
 import time
 from sys import exit
 import csv
@@ -211,7 +212,7 @@ while True:
                     if len(log_dict) > 0:
                         print(log_dict)
                         items = list(log_dict.items())
-                        now = datetime.now()
+                        now = datetime.datetime.now()
 
                         items.insert(0, ('datetime', now))
                         log_dict = dict(items)
