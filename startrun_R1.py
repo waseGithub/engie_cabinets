@@ -185,6 +185,12 @@ while True:
                 flowmeter_info = ['Channel', 'Name', 'timestamp', 'temp_C', 'pressureh_Pa', 'total_tips_since_start', 'volume_this_tip_ml', 
                                   'total_vol_since_start_ml', 'tips_this_day', 'vol_this_dayml', 'tips_this_hour', 'vol_this_hourml', 
                                   'net_gas_attributable_to_test_sample_since_startmlg']
+                
+                old name = Channel,Name,timestamp,temp(C),pressure(hPa),total_tips_since_start,volume_this_tip(ml),total_vol_since_start(ml),tips_this_day,vol_this_day(ml),tips_this_hour,vol_this_hour(ml),net_gas_attributable_to_test_sample_since_start(ml/g)
+
+                
+
+
                 while not done:
                     line = ser.readline()
                     line = line.rstrip()
@@ -207,6 +213,7 @@ while True:
                     if len(log_dict) > 0:
                         print(log_dict)
                         df = pd.DataFrame.from_dict(log_dict) 
+                        df.rename(columns={'temp(C)': 'temp_C', 'pressure(hPa)':'', '':'pressureh_Pa', 'volume_this_tip(ml)':'volume_this_tip_ml', 'vol_this_day(ml)': 'vol_this_dayml', 'vol_this_hour(ml)':'tips_this_hour', 'net_gas_attributable_to_test_sample_since_start(ml/g)':'net_gas_attributable_to_test_sample_since_startmlg'}, inplace=True)
                 
                         # df.to_csv (r'test8.csv',mode = 'a', index = False, header=True)
                         with open(r'flowmeter.csv', 'a') as f:
