@@ -24,6 +24,7 @@ else:
     ser = serial.Serial()
     try:
         ser = serial.Serial(var, 57600, timeout=180)
+        print('connect')
     except serial.serialutil.SerialException:
         done = False
 
