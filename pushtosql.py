@@ -23,7 +23,7 @@ import mysql.connector
 import sys 
 
 
-cnx = mysql.connector.connect(user='root', password='wase2022', host='34.89.81.147', database='flowmeter')
+cnx = mysql.connector.connect(user='root', password='wase2022', host='34.89.81.147', database='cabinet_datasets')
 cursor = cnx.cursor()
 cols = "`,`".join([str(i) for i in df.columns.tolist()])
 
