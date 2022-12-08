@@ -210,7 +210,7 @@ while True:
                     if len(log_dict) > 0:
                         print(log_dict)
                         df = pd.DataFrame.from_dict(log_dict) 
-                        df.rename(columns={'temp(C)': 'temp_C', 'pressure(hPa)':'pressureh_Pa', 'volume_this_tip(ml)':'volume_this_tip_ml', 'vol_this_day(ml)': 'vol_this_dayml', 'vol_this_hour(ml)':'tips_this_hour', 'net_gas_attributable_to_test_sample_since_start(ml/g)':'net_gas_attributable_to_test_sample_since_startmlg'}, inplace=True)
+                        df.rename(columns={'temp(C)': 'tempC', 'pressure(hPa)':'pressurehPa', 'volume_this_tip(ml)':'volume_this_tipml', 'vol_this_day(ml)': 'vol_this_dayml', 'vol_this_hour(ml)':'vol_this_hourml', 'net_gas_attributable_to_test_sample_since_start(ml/g)':'net_gas_attributable_to_test_sample_since_startmlg'}, inplace=True)
                 
                         # df.to_csv (r'test8.csv',mode = 'a', index = False, header=True)
                         with open(r'flowmeter.csv', 'a') as f:
