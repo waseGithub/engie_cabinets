@@ -1,0 +1,292 @@
+('2022-12-08 16:07:33.518012', 7, 'sleepy', 12881, Decimal('22.50'), Decimal('1001.96'), '\x01', Decimal('4.72'), Decimal('4.72'), '\x01', Decimal('4.72'), '\x01', Decimal('4.72'), Decimal('1.20'))
+('2022-12-08 16:07:49.339615', 5, 'sneezy', 28719, Decimal('22.50'), Decimal('1001.96'), '\x01', Decimal('4.57'), Decimal('4.57'), '\x01', Decimal('4.57'), '\x01', Decimal('4.57'), Decimal('1.89'))
+('2022-12-12 12:02:01.702721', 7, 'sleepy', 26339, Decimal('21.25'), Decimal('1000.08'), '\x01', Decimal('4.73'), Decimal('4.73'), '\x01', Decimal('4.73'), '\x01', Decimal('4.73'), Decimal('1.21'))
+('2022-12-12 12:02:21.554867', 6, 'dopey', 46212, Decimal('21.25'), Decimal('1000.05'), '\x01', Decimal('4.58'), Decimal('4.58'), '\x01', Decimal('4.58'), '\x01', Decimal('4.58'), Decimal('1.92'))
+('2022-12-12 13:10:22.817793', 7, 'sleepy', 45037, Decimal('21.25'), Decimal('999.67'), '\x01', Decimal('4.73'), Decimal('4.73'), '\x01', Decimal('4.73'), '\x01', Decimal('4.73'), Decimal('1.21'))
+('2022-12-12 13:10:39.425233', 6, 'dopey', 61660, Decimal('21.50'), Decimal('999.70'), '\x01', Decimal('4.57'), Decimal('4.57'), '\x01', Decimal('4.57'), '\x01', Decimal('4.57'), Decimal('1.92'))
+('2022-12-12 13:21:44.459961', 7, 'sleepy', 727387, Decimal('21.50'), Decimal('999.56'), '3.0', Decimal('4.73'), Decimal('14.19'), '3.0', Decimal('14.19'), '3.0', Decimal('14.19'), Decimal('3.62'))
+('2022-12-12 13:22:00.286195', 6, 'dopey', 743230, Decimal('21.50'), Decimal('999.56'), '3.0', Decimal('4.57'), Decimal('13.72'), '3.0', Decimal('13.72'), '3.0', Decimal('13.72'), Decimal('5.76'))
+('2022-12-12 14:59:24.907620', 7, 'sleepy', 6054, Decimal('21.25'), Decimal('999.83'), '1', Decimal('4.73'), Decimal('4.73'), '1', Decimal('4.73'), '1', Decimal('4.73'), Decimal('1.21'))
+('2022-12-12 15:03:20.277316', 7, 'sleepy', 241666, Decimal('21.25'), Decimal('999.80'), '2', Decimal('4.73'), Decimal('9.47'), '2', Decimal('9.47'), '2', Decimal('9.47'), Decimal('2.41'))
+('2022-12-12 15:07:44.089280', 7, 'sleepy', 505755, Decimal('21.25'), Decimal('999.81'), '3', Decimal('4.73'), Decimal('14.20'), '3', Decimal('14.20'), '3', Decimal('14.20'), Decimal('3.62'))
+('2022-12-12 15:08:43.730651', 7, 'sleepy', 565456, Decimal('21.25'), Decimal('999.84'), '4', Decimal('4.73'), Decimal('18.93'), '4', Decimal('18.93'), '4', Decimal('18.93'), Decimal('4.83'))
+('2022-12-08 16:07:33.518012', 7, 'sleepy', 12881, Decimal('22.50'), Decimal('1001.96'), '\x01', Decimal('4.72'), Decimal('4.72'), '\x01', Decimal('4.72'), '\x01', Decimal('4.72'), Decimal('1.20'))
+('2022-12-08 16:07:49.339615', 5, 'sneezy', 28719, Decimal('22.50'), Decimal('1001.96'), '\x01', Decimal('4.57'), Decimal('4.57'), '\x01', Decimal('4.57'), '\x01', Decimal('4.57'), Decimal('1.89'))
+('2022-12-12 12:02:01.702721', 7, 'sleepy', 26339, Decimal('21.25'), Decimal('1000.08'), '\x01', Decimal('4.73'), Decimal('4.73'), '\x01', Decimal('4.73'), '\x01', Decimal('4.73'), Decimal('1.21'))
+('2022-12-12 12:02:21.554867', 6, 'dopey', 46212, Decimal('21.25'), Decimal('1000.05'), '\x01', Decimal('4.58'), Decimal('4.58'), '\x01', Decimal('4.58'), '\x01', Decimal('4.58'), Decimal('1.92'))
+('2022-12-12 13:10:22.817793', 7, 'sleepy', 45037, Decimal('21.25'), Decimal('999.67'), '\x01', Decimal('4.73'), Decimal('4.73'), '\x01', Decimal('4.73'), '\x01', Decimal('4.73'), Decimal('1.21'))
+('2022-12-12 13:10:39.425233', 6, 'dopey', 61660, Decimal('21.50'), Decimal('999.70'), '\x01', Decimal('4.57'), Decimal('4.57'), '\x01', Decimal('4.57'), '\x01', Decimal('4.57'), Decimal('1.92'))
+('2022-12-12 13:21:44.459961', 7, 'sleepy', 727387, Decimal('21.50'), Decimal('999.56'), '3.0', Decimal('4.73'), Decimal('14.19'), '3.0', Decimal('14.19'), '3.0', Decimal('14.19'), Decimal('3.62'))
+('2022-12-12 13:22:00.286195', 6, 'dopey', 743230, Decimal('21.50'), Decimal('999.56'), '3.0', Decimal('4.57'), Decimal('13.72'), '3.0', Decimal('13.72'), '3.0', Decimal('13.72'), Decimal('5.76'))
+('2022-12-12 14:59:24.907620', 7, 'sleepy', 6054, Decimal('21.25'), Decimal('999.83'), '1', Decimal('4.73'), Decimal('4.73'), '1', Decimal('4.73'), '1', Decimal('4.73'), Decimal('1.21'))
+('2022-12-12 15:03:20.277316', 7, 'sleepy', 241666, Decimal('21.25'), Decimal('999.80'), '2', Decimal('4.73'), Decimal('9.47'), '2', Decimal('9.47'), '2', Decimal('9.47'), Decimal('2.41'))
+('2022-12-12 15:07:44.089280', 7, 'sleepy', 505755, Decimal('21.25'), Decimal('999.81'), '3', Decimal('4.73'), Decimal('14.20'), '3', Decimal('14.20'), '3', Decimal('14.20'), Decimal('3.62'))
+('2022-12-12 15:08:43.730651', 7, 'sleepy', 565456, Decimal('21.25'), Decimal('999.84'), '4', Decimal('4.73'), Decimal('18.93'), '4', Decimal('18.93'), '4', Decimal('18.93'), Decimal('4.83'))
+('2022-12-12 15:09:11.041701', 7, 'sleepy', 592795, Decimal('21.25'), Decimal('999.86'), '5', Decimal('4.73'), Decimal('23.67'), '5', Decimal('23.67'), '5', Decimal('23.67'), Decimal('6.04'))
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+('2022-12-08 16:07:33.518012', 7, 'sleepy', 12881, Decimal('22.50'), Decimal('1001.96'), '\x01', Decimal('4.72'), Decimal('4.72'), '\x01', Decimal('4.72'), '\x01', Decimal('4.72'), Decimal('1.20'))
+('2022-12-08 16:07:49.339615', 5, 'sneezy', 28719, Decimal('22.50'), Decimal('1001.96'), '\x01', Decimal('4.57'), Decimal('4.57'), '\x01', Decimal('4.57'), '\x01', Decimal('4.57'), Decimal('1.89'))
+('2022-12-12 12:02:01.702721', 7, 'sleepy', 26339, Decimal('21.25'), Decimal('1000.08'), '\x01', Decimal('4.73'), Decimal('4.73'), '\x01', Decimal('4.73'), '\x01', Decimal('4.73'), Decimal('1.21'))
+('2022-12-12 12:02:21.554867', 6, 'dopey', 46212, Decimal('21.25'), Decimal('1000.05'), '\x01', Decimal('4.58'), Decimal('4.58'), '\x01', Decimal('4.58'), '\x01', Decimal('4.58'), Decimal('1.92'))
+('2022-12-12 13:10:22.817793', 7, 'sleepy', 45037, Decimal('21.25'), Decimal('999.67'), '\x01', Decimal('4.73'), Decimal('4.73'), '\x01', Decimal('4.73'), '\x01', Decimal('4.73'), Decimal('1.21'))
+('2022-12-12 13:10:39.425233', 6, 'dopey', 61660, Decimal('21.50'), Decimal('999.70'), '\x01', Decimal('4.57'), Decimal('4.57'), '\x01', Decimal('4.57'), '\x01', Decimal('4.57'), Decimal('1.92'))
+('2022-12-12 13:21:44.459961', 7, 'sleepy', 727387, Decimal('21.50'), Decimal('999.56'), '3.0', Decimal('4.73'), Decimal('14.19'), '3.0', Decimal('14.19'), '3.0', Decimal('14.19'), Decimal('3.62'))
+('2022-12-12 13:22:00.286195', 6, 'dopey', 743230, Decimal('21.50'), Decimal('999.56'), '3.0', Decimal('4.57'), Decimal('13.72'), '3.0', Decimal('13.72'), '3.0', Decimal('13.72'), Decimal('5.76'))
+('2022-12-12 14:59:24.907620', 7, 'sleepy', 6054, Decimal('21.25'), Decimal('999.83'), '1', Decimal('4.73'), Decimal('4.73'), '1', Decimal('4.73'), '1', Decimal('4.73'), Decimal('1.21'))
+('2022-12-12 15:03:20.277316', 7, 'sleepy', 241666, Decimal('21.25'), Decimal('999.80'), '2', Decimal('4.73'), Decimal('9.47'), '2', Decimal('9.47'), '2', Decimal('9.47'), Decimal('2.41'))
+('2022-12-12 15:07:44.089280', 7, 'sleepy', 505755, Decimal('21.25'), Decimal('999.81'), '3', Decimal('4.73'), Decimal('14.20'), '3', Decimal('14.20'), '3', Decimal('14.20'), Decimal('3.62'))
+('2022-12-12 15:08:43.730651', 7, 'sleepy', 565456, Decimal('21.25'), Decimal('999.84'), '4', Decimal('4.73'), Decimal('18.93'), '4', Decimal('18.93'), '4', Decimal('18.93'), Decimal('4.83'))
+('2022-12-12 15:09:11.041701', 7, 'sleepy', 592795, Decimal('21.25'), Decimal('999.86'), '5', Decimal('4.73'), Decimal('23.67'), '5', Decimal('23.67'), '5', Decimal('23.67'), Decimal('6.04'))
+('2022-12-12 15:23:08.191342', 7, 'sleepy', 1430817, Decimal('21.50'), Decimal('999.83'), '6', Decimal('4.73'), Decimal('28.39'), '6', Decimal('28.39'), '6', Decimal('28.39'), Decimal('7.24'))
+('2022-12-12 15:23:24.013108', 6, 'dopey', 1446656, Decimal('21.50'), Decimal('999.82'), '1', Decimal('4.57'), Decimal('4.57'), '1', Decimal('4.57'), '1', Decimal('4.57'), Decimal('1.92'))
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 9, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'

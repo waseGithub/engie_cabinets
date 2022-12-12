@@ -6,7 +6,7 @@
 
 import pandas as pd
 
-data = pd.read_csv (r'flowmeter_push.csv')   
+data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
 df = pd.DataFrame(data)
 # display(df)
 
@@ -52,5 +52,4 @@ for i in result:
 
 # Close the connection
 cnx.close()
-os.remove('/wase-cabinet/flowmeter_push.csv')
-
+os.remove(r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')
