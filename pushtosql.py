@@ -8,7 +8,7 @@ import pandas as pd
 
 data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
 df = pd.DataFrame(data)
-# display(df)
+
 
 
 # In[2]:
@@ -33,6 +33,7 @@ for i,row in df.iterrows():
     sql = "INSERT INTO `flowmeter` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
     cursor.execute(sql, tuple(row))
     cnx.commit()
+    print(row)
 
 
 # In[3]:
@@ -41,14 +42,14 @@ for i,row in df.iterrows():
 # Create cursor
 my_cursor = cnx.cursor()
 
-# Execute Query
-my_cursor.execute("SELECT * from flowmeter")
+# # Execute Query
+# my_cursor.execute("SELECT * from flowmeter")
 
-# Fetch the records
-result = my_cursor.fetchall()
+# # Fetch the records
+# result = my_cursor.fetchall()
 
-for i in result:
-    print(i)
+# for i in result:
+#     print(i)
 
 # Close the connection
 cnx.close()
