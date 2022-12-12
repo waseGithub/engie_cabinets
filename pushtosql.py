@@ -33,7 +33,8 @@ for i,row in df.iterrows():
     sql = "INSERT INTO `flowmeter` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
     cursor.execute(sql, tuple(row))
     cnx.commit()
-    print(row)
+
+print(df) 
 
 
 # In[3]:
