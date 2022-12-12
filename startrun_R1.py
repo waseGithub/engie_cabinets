@@ -220,7 +220,10 @@ while True:
                         df.rename(columns={'temp(C)': 'tempC', 'pressure(hPa)':'pressurehPa', 'volume_this_tip(ml)':'volume_this_tipml', 'vol_this_day(ml)': 'vol_this_dayml','total_vol_since_start(ml)':'total_vol_since_startml', 'vol_this_hour(ml)':'vol_this_hourml', 'net_gas_attributable_to_test_sample_since_start(ml/g)':'net_gas_attributable_to_test_sample_since_startmlg'}, inplace=True)
                 
                         # df.to_csv (r'test8.csv',mode = 'a', index = False, header=True)
-                        with open(r'flowmeter.csv', 'a') as f:
+                        with open(r'flowmeter_archive.csv', 'a') as f:
+                            df.to_csv(f, mode='a',index = False, header=f.tell()==0)
+                        
+                        with open(r'flowmeter_push.csv', 'a') as f:
                             df.to_csv(f, mode='a',index = False, header=f.tell()==0)
 
 

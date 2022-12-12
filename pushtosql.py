@@ -6,7 +6,7 @@
 
 import pandas as pd
 
-data = pd.read_csv (r'flowmeter.csv')   
+data = pd.read_csv (r'flowmeter_push.csv')   
 df = pd.DataFrame(data)
 # display(df)
 
@@ -21,6 +21,7 @@ import numpy as np
 from datetime import datetime
 import mysql.connector 
 import sys 
+import os
 
 
 cnx = mysql.connector.connect(user='root', password='wase2022', host='34.89.81.147', database='cabinet_datasets')
@@ -51,4 +52,5 @@ for i in result:
 
 # Close the connection
 cnx.close()
+os.remove(r'flowmeter_push.csv')
 
