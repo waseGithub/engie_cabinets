@@ -95,7 +95,7 @@ while True:
         while line != b'starting daily.csv writeback':
             line = ser.readline()
             line = line.rstrip()
-            # print(line.decode())
+            print(line.decode())
 
         f3 = open('daily.csv', 'wb')
         line = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S')
@@ -174,8 +174,7 @@ while True:
                 f1.close()
 
                 time.sleep(0.1)
-             
-                print()
+        
                 time.sleep(0.1)
                 ser.write(b'X')
                 done = False
@@ -196,7 +195,7 @@ while True:
                     log_dict = {}
                     
                     if line != b'ping':
-                        # print(line.decode())
+                        print(line.decode())
                         if line.decode() == '**********':
                             pass
                            

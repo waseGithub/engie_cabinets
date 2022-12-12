@@ -52,5 +52,5 @@ for i in result:
 
 # Close the connection
 cnx.close()
-os.remove(r'flowmeter_push.csv')
+os.remove('/wase-cabinet/flowmeter_push.csv')
 
