@@ -6,7 +6,7 @@ import pandas as pd
 
 data = pd.read_csv (r'/home/pi/wase-cabinet/file_7.csv')   
 df = pd.DataFrame(data)
-
+print(df)
 
 
 import sqlite3
