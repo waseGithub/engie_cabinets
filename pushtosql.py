@@ -4,7 +4,7 @@
 
 import pandas as pd
 
-data = pd.read_csv (r'/home/pi/wase-cabinet/flowmeter_push.csv')   
+data = pd.read_csv (r'/home/pi/wase-cabinet/file_7.csv')   
 df = pd.DataFrame(data)
 
 
