@@ -11,10 +11,10 @@ df = pd.DataFrame(data)
 ls = ['datetime', 'error_status', 'column_c']
 
 for i in np.arange(1,10):
-    present = 'card_present_channel' + str(i)
-    enabled = 'card_enabled_channel' + str(i)
-    voltage = 'card_voltgae_channel' + str(i)
-    current = 'card_current_channel' + str(i) 
+    present = 'card_present_channel_' + str(i)
+    enabled = 'card_enabled_channel_' + str(i)
+    voltage = 'card_voltgae_channel_' + str(i)
+    current = 'card_current_channel_' + str(i) 
     ls.extend([present, enabled, voltage, current])
 
 
