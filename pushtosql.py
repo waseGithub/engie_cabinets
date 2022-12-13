@@ -23,6 +23,7 @@ for i in np.arange(1,10):
 print(ls)
 df.columns = ls
 df['datetime'] = pd.to_datetime(df['datetime'])
+df['datetime'] = df['datetime'].dt.strftime('%Y-%m-%d %H:%M:%S')
 df = df.dropna()
 print(df)
 
