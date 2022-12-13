@@ -20,7 +20,7 @@ for i in np.arange(1,10):
 
 print(ls)
 df.columns = ls
-
+df = df.dropna()
 print(df)
 
 import sqlite3
