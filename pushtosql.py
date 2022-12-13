@@ -20,12 +20,12 @@ for i in np.arange(1,10):
 
 
 
-print(ls)
+
 df.columns = ls
 df['datetime'] = pd.to_datetime(df['datetime'])
 df['datetime'] = df['datetime'].dt.strftime('%Y-%m-%d %H:%M:%S')
 df = df.dropna()
-print(df)
+
 
 import sqlite3
 from google.cloud import storage
@@ -51,9 +51,19 @@ print(df)
 
 
 
+
 # Create cursor
 my_cursor = cnx.cursor()
 
+
+# Execute Query
+my_cursor.execute("SELECT * from current_data")
+
+# Fetch the records
+result = my_cursor.fetchall()
+
+for i in result:
+    print(i)
 
 cnx.close()
 # os.remove(r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')
