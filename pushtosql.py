@@ -18,8 +18,11 @@ for i in np.arange(1,10):
     ls.extend([present, enabled, voltage, current])
 
 
+
+
 print(ls)
 df.columns = ls
+df['datetime'] = pd.to_datetime(df['datetime'])
 df = df.dropna()
 print(df)
 
