@@ -7,8 +7,10 @@ import pandas as pd
 data = pd.read_csv (r'/home/pi/wase-cabinet/file_7.csv')   
 df = pd.DataFrame(data)
 print(df)
-
-
+df.columns =['datetime', 'error_status', 'column_c', 'card_present_channel_1', 'card_enabled_channel_1', 'card_voltage_channel_1', 'card_current_channel_1'
+'card_present_channel_2', 'card_enabled_channel_2', 'card_voltage_channel_2', 'card_current_channel_2',
+'card_present_channel_3', 'card_enabled_channel_3', 'card_voltage_channel_3', 'card_current_channel_3',
+'card_present_channel_4', 'card_enabled_channel_4', 'card_voltage_channel_4', 'card_current_channel_4']
 
 import sqlite3
 from google.cloud import storage
