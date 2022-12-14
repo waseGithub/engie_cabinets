@@ -8,12 +8,8 @@ import numpy
 
 
 import serial.tools.list_ports
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
 
 
-gauth = GoogleAuth()           
-drive = GoogleDrive(gauth)  
 
 import re
 import subprocess
