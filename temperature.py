@@ -86,6 +86,7 @@ if __name__ == '__main__':
                     
                     writer = csv.writer(f, delimiter=",")
                     writer.writerow([time.asctime(),line1])
+                    time.sleep(100)
                     
 
           
