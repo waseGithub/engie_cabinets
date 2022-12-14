@@ -65,7 +65,7 @@ def arduino_read(port):
     return data
 
 
-if __name__ == '__main__':
+while(True):
     arduino_read(ser1)
 
     
