@@ -64,7 +64,7 @@ def arduino_read(port):
     data = port.readline().decode("utf-8")
     with open ("temperature.csv","a") as file:
                 writer = csv.writer(file, delimiter="|")
-                writer.writerow([time.asctime(),line3])
+                writer.writerow([time.asctime(),data])
     print(data)
     return data
 
