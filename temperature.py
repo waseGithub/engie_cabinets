@@ -55,7 +55,7 @@ for port, desc, hwid in sorted(ports):
 
 print('Temp arduino as port:')          
 print(Megas)
-ser1 = serial.Serial(str(Megas[0]),  9600, timeout = 25)
+ser1 = serial.Serial(str(Megas[0]),  9600, timeout = 25).decode("utf-8")
 
 
 
