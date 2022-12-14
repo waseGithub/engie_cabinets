@@ -80,15 +80,15 @@ if __name__ == '__main__':
          print(line1)
             
             
-            with open ("temperature.csv","a") as f:
+            # with open ("temperature.csv","a") as f:
                 
-                writer = csv.writer(f, delimiter=",")
-                writer.writerow([time.asctime(),line1])
-                time.sleep(1000)
+            #     writer = csv.writer(f, delimiter=",")
+            #     writer.writerow([time.asctime(),line1])
+            #     time.sleep(1000)
                 
 
           
-            print('writing temperature data')
-            print(line1)
+            # print('writing temperature data')
+            # print(line1)
         #  except UnicodeDecodeError:
         #      pass
