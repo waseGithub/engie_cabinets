@@ -76,9 +76,8 @@ if __name__ == '__main__':
          i +=1
          print('Current count =')
          print(i)
-         if ser1.in_waiting > 0:
-        
-            line1 = ser1.readline().decode("utf-8")
+         line1 = ser1.readline().decode("utf-8")
+         print(line1)
             
             
             with open ("temperature.csv","a") as f:
