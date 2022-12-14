@@ -76,8 +76,12 @@ if __name__ == '__main__':
          i +=1
          print('Current count =')
          print(i)
-         line1 = ser1.readline().decode("utf-8")
-         print(line1)
+         try:
+             line1 = ser1.readline().decode("utf-8")
+             print(line1)
+         except UnicodeDecodeError:
+             line1 = ser1.readline().decode("utf-8")
+
             
             
             # with open ("temperature.csv","a") as f:
