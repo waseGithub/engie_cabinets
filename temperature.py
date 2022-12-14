@@ -66,9 +66,10 @@ def arduino_read(port):
         with open ("temperature.csv","a") as file:
                     writer = csv.writer(file, delimiter="|")
                     writer.writerow([time.asctime(),data[0:5], data[14:18]])
-    #     with open ("temperature.csv","a") as file:
-    #                 writer = csv.writer(file, delimiter="|")
-    #                 writer.writerow([time.asctime(),data])
+        with open ("temperature_archive.csv","a") as file:
+                    writer = csv.writer(file, delimiter="|")
+                    writer.writerow([time.asctime(),data[0:5], data[14:18]])
+
     print(data)
     return data
 
