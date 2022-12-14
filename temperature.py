@@ -48,3 +48,7 @@ Megas = []
 unos = []
 for port, desc, hwid in sorted(ports):
         print("{}: {} [{}]".format(port, desc, hwid))
+        if '9503830353135190A221' in hwid:
+          print('Requested device found temperature arduino')
+          print(port)
+          Megas.append(port)
