@@ -52,3 +52,44 @@ for port, desc, hwid in sorted(ports):
           print('Requested device found temperature arduino')
           print(port)
           Megas.append(port)
+
+print('Temp arduino as port:')          
+print(Megas)
+ser1 = serial.Serial(str(Megas[0]),  9600, timeout = 25)
+
+
+
+
+if __name__ == '__main__':
+    
+   
+   
+    
+   
+    
+    ser1.flush()
+
+    i = 0
+
+   
+    while True:
+         i +=1
+         print('Current count =')
+         print(i)
+         try:
+            if ser1.in_waiting > 0:
+            
+                line1 = ser1.readline().decode("utf-8")
+                
+                
+                with open ("temperature.csv","a") as f:
+                    
+                    writer = csv.writer(f, delimiter=",")
+                    writer.writerow([time.asctime(),line1])
+                    
+
+          
+            print('writing temperature data')
+            print(line1)
+         except UnicodeDecodeError:
+             pass
