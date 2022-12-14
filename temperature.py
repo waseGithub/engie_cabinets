@@ -76,21 +76,20 @@ if __name__ == '__main__':
          i +=1
          print('Current count =')
          print(i)
-         try:
-            if ser1.in_waiting > 0:
+         if ser1.in_waiting > 0:
+        
+            line1 = ser1.readline().decode("utf-8")
             
-                line1 = ser1.readline().decode("utf-8")
+            
+            with open ("temperature.csv","a") as f:
                 
+                writer = csv.writer(f, delimiter=",")
+                writer.writerow([time.asctime(),line1])
+                time.sleep(100)
                 
-                with open ("temperature.csv","a") as f:
-                    
-                    writer = csv.writer(f, delimiter=",")
-                    writer.writerow([time.asctime(),line1])
-                    time.sleep(100)
-                    
 
           
             print('writing temperature data')
             print(line1)
-         except UnicodeDecodeError:
-             pass
+        #  except UnicodeDecodeError:
+        #      pass
