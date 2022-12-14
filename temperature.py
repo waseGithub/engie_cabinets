@@ -61,7 +61,7 @@ ser1 = serial.Serial(str(Megas[0]),  9600, timeout = 25)
 
 
 def arduino_read(port):
-    data = port.readline().decode("utf-8")
+    data = port.readline()
     if(len(data)) == 56 :
         with open ("temperature.csv","a") as file:
                     writer = csv.writer(file, delimiter="|")
