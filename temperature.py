@@ -57,18 +57,23 @@ print('Temp arduino as port:')
 print(Megas)
 ser1 = serial.Serial(str(Megas[0]),  9600, timeout = 25)
 
-
+temp_dict = {'F2':'TA', 'D7':'TB', '7F':'TC', '68':'TD'}
 
 
 def arduino_read(port):
     data = port.readline().decode("utf-8")
     if(len(data)) == 56 :
+
+
+        print(temp_dict[data[16:18]])
+
+
         with open ("temperature.csv","a") as file:
                     writer = csv.writer(file, delimiter="|")
-                    writer.writerow([time.asctime(),data[0:5], data[14:18]])
+                    writer.writerow([time.asctime(),data[0:5], data[16:18]])
         with open ("temperature_archive.csv","a") as file:
                     writer = csv.writer(file, delimiter="|")
-                    writer.writerow([time.asctime(),data[0:5], data[14:18]])
+                    writer.writerow([time.asctime(),data[0:5], data[16:18]])
 
     print(data)
     return data
