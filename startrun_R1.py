@@ -1,19 +1,13 @@
-# uncompyle6 version 3.8.0
-# Python bytecode 3.8.0 (3413)
-# Decompiled from: Python 3.8.10 (default, Jun 22 2022, 20:18:18) 
-# [GCC 9.4.0]
-# Embedded file name: startrun_R1.py
 """
-Bittern build
+Cabinets
 """
 
 import datetime
-
+from time import gmtime, strftime
 import time
 from sys import exit
 import csv
 import pandas as pd
-
 import serial
 import serial.tools.list_ports
 
@@ -107,20 +101,6 @@ while True:
                 # print(line.decode())
                 ramdiskf3 = ramdiskf3 + line + b'\n'
 
-            # while line != b'starting hourly.csv writeback':
-            #     line = ser.readline()
-            #     line = line.rstrip()
-                # print(line.decode())
-
-            # f4 = open('hourly.csv', 'wb')
-            # line = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S')
-            # ramdiskf4 = b'file uploaded: ' + line.encode() + b'\n'
-            # while line != b'writeback completed - hourly.csv closed':
-            #     line = ser.readline()
-            #     line = line.rstrip()
-            #     # print(line.decode())
-            #     ramdiskf4 = ramdiskf4 + line + b'\n'
-
             f1.write(ramdiskf1)
             f1.close()
             f2.write(ramdiskf2)
@@ -211,7 +191,7 @@ while True:
                     if len(log_dict) > 0:
                         print(log_dict)
                         items = list(log_dict.items())
-                        now = datetime.datetime.now()
+                        now = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                         items.insert(0, ('datetime', now))
                         log_dict = dict(items)
@@ -230,4 +210,4 @@ while True:
                 print('Bye')
                 time.sleep(2)
                 exit(0)
-    # okay decompiling startrun_R1.pyc
+

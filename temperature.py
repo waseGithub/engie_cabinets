@@ -70,10 +70,10 @@ def arduino_read(port):
 
         with open ("temp_push.csv","a") as file:
                     writer = csv.writer(file, delimiter="|")
-                    writer.writerow([time.asctime(),data[0:5], temp_dict[data[16:18]]])
+                    writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
         with open ("temp_archive.csv","a") as file:
                     writer = csv.writer(file, delimiter="|")
-                    writer.writerow([time.asctime(),data[0:5], temp_dict[data[16:18]]])
+                    writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
 
     print(data)
     return data
