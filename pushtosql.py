@@ -38,7 +38,7 @@ for i,row in df_flow.iterrows():
     cursor.execute(sql, tuple(row))
     cnx.commit()
 
-for i,row in df_flow.iterrows():
+for i,row in df_temp.iterrows():
     sql = "INSERT INTO `temperature` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
     cursor.execute(sql, tuple(row))
     cnx.commit()
