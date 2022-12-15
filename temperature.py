@@ -5,6 +5,7 @@ import csv
 import os
 import pandas as pd
 import numpy
+from time import gmtime, strftime
 
 
 import serial.tools.list_ports
@@ -63,7 +64,7 @@ temp_dict = {'F2':'TA', 'D7':'TB', '7F':'TC', '68':'TD'}
 def arduino_read(port):
     data = port.readline().decode("utf-8")
     if(len(data)) == 56 :
-        now = time.asctime()
+        now = strftime("%Y-%m-%d %H:%M:%S", gmtime())
         print(now)
 
 
