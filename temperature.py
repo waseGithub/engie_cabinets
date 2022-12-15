@@ -65,15 +65,15 @@ def arduino_read(port):
     if(len(data)) == 56 :
 
 
-        print(temp_dict[data[16:18]])
+      
 
 
         with open ("temperature.csv","a") as file:
                     writer = csv.writer(file, delimiter="|")
-                    writer.writerow([time.asctime(),data[0:5], data[16:18]])
+                    writer.writerow([time.asctime(),data[0:5], temp_dict[data[16:18]]])
         with open ("temperature_archive.csv","a") as file:
                     writer = csv.writer(file, delimiter="|")
-                    writer.writerow([time.asctime(),data[0:5], data[16:18]])
+                    writer.writerow([time.asctime(),data[0:5], temp_dict[data[16:18]]])
 
     print(data)
     return data
