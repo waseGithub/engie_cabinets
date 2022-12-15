@@ -63,15 +63,14 @@ temp_dict = {'F2':'TA', 'D7':'TB', '7F':'TC', '68':'TD'}
 def arduino_read(port):
     data = port.readline().decode("utf-8")
     if(len(data)) == 56 :
+        now = time.asctime()
+        print(now)
 
 
-      
-
-
-        with open ("temperature.csv","a") as file:
+        with open ("temp_push.csv","a") as file:
                     writer = csv.writer(file, delimiter="|")
                     writer.writerow([time.asctime(),data[0:5], temp_dict[data[16:18]]])
-        with open ("temperature_archive.csv","a") as file:
+        with open ("temp_archive.csv","a") as file:
                     writer = csv.writer(file, delimiter="|")
                     writer.writerow([time.asctime(),data[0:5], temp_dict[data[16:18]]])
 
