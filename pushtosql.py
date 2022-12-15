@@ -64,3 +64,4 @@ my_cursor = cnx.cursor()
 # Close the connection
 cnx.close()
 os.remove(r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')
+os.remove(r'/home/wase-cabinet/wase-cabinet/temp_push.csv')
