@@ -66,7 +66,7 @@ def arduino_read(port):
     if(len(data)) == 56 :
         now = strftime("%Y-%m-%d %H:%M:%S", gmtime())
         print(now)
-        file_exists = os.path.isfile(filename)
+        file_exists = os.path.isfile('temp_push.csv')
 
         with open ("temp_push.csv", 'a') as csvfile:
             headers = ['datetime', 'temperature_degC', 'probe_id']
