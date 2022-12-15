@@ -66,6 +66,21 @@ def arduino_read(port):
     if(len(data)) == 56 :
         now = strftime("%Y-%m-%d %H:%M:%S", gmtime())
         print(now)
+        file_exists = os.path.isfile(filename)
+
+        with open ("temp_push.csv", 'a') as csvfile:
+            headers = ['datetime', 'temperature_degC', 'probe_id']
+            writer = csv.writer(file, delimiter=",")
+            
+
+            if not file_exists:
+                writer.writeheader()  # file doesn't exist yet, write a header
+
+            writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
+
+
+
+      
 
 
         # with open ("temp_push.csv","a") as file:
@@ -75,14 +90,14 @@ def arduino_read(port):
         #             writer = csv.writer(file, delimiter=",")
         #             writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
         
-        with open(r"temp_push.csv", 'a') as f:
-            fieldnames = ['datetime', 'temperature_degC', 'probe_id']
-            writer = csv.writer(file, delimiter=",",fieldnames=fieldnames)
-            writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
+        # with open(r"temp_push.csv", 'a') as f:
+        #     fieldnames = ['datetime', 'temperature_degC', 'probe_id']
+        #     writer = csv.writer(file, delimiter=",")
+        #     writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
                     
-        with open(r"temp_archive.csv", 'a') as f:
-            writer = csv.writer(file, delimiter=",", fieldnames=fieldnames)
-            writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
+        # with open(r"temp_archive.csv", 'a') as f:
+        #     writer = csv.writer(file, delimiter=",", fieldnames=fieldnames)
+        #     writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
 
     print(data)
     return data
