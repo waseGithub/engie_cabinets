@@ -68,7 +68,7 @@ def arduino_read(port):
         print(now)
         file_exists = os.path.isfile('temp_push.csv')
 
-        with open ("temp_push.csv", 'a') as csvfile:
+        with open ("temp_push.csv", 'a') as file:
             headers = ['datetime', 'temperature_degC', 'probe_id']
             writer = csv.writer(file, delimiter=",")
             
