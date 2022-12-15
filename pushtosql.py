@@ -31,13 +31,14 @@ df_temp = pd.DataFrame(data)
 cnx = mysql.connector.connect(user='root', password='wase2022', host='34.89.81.147', database='cabinet_datasets')
 cursor = cnx.cursor()
 cols = "`,`".join([str(i) for i in df_flow.columns.tolist()])
-
-
 for i,row in df_flow.iterrows():
     sql = "INSERT INTO `flowmeter` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
     cursor.execute(sql, tuple(row))
     cnx.commit()
 
+
+cursor = cnx.cursor()
+cols = "`,`".join([str(i) for i in df_temp.columns.tolist()])
 for i,row in df_temp.iterrows():
     sql = "INSERT INTO `temperature` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
     cursor.execute(sql, tuple(row))
