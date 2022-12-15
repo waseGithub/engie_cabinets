@@ -68,12 +68,21 @@ def arduino_read(port):
         print(now)
 
 
-        with open ("temp_push.csv","a") as file:
-                    writer = csv.writer(file, delimiter=",")
-                    writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
-        with open ("temp_archive.csv","a") as file:
-                    writer = csv.writer(file, delimiter=",")
-                    writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
+        # with open ("temp_push.csv","a") as file:
+        #             writer = csv.writer(file, delimiter=",")
+        #             writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
+        # with open ("temp_archive.csv","a") as file:
+        #             writer = csv.writer(file, delimiter=",")
+        #             writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
+        
+        with open(r"temp_push.csv", 'a') as f:
+            fieldnames = ['datetime', 'temperature_degC', 'probe_id']
+            writer = csv.writer(file, delimiter=",",fieldnames=fieldnames)
+            writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
+                    
+        with open(r"temp_archive.csv", 'a') as f:
+            writer = csv.writer(file, delimiter=",", fieldnames=fieldnames)
+            writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
 
     print(data)
     return data
