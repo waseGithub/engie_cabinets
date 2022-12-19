@@ -45,7 +45,9 @@ def resample_max(df, time, cols, round_val):
 data = pd.read_csv(r'/home/pi/wase-cabinet/file_7.csv') 
 data2 = pd.read_csv(r'/home/pi/wase-cabinet/file_6.csv') 
 df = pd.DataFrame(data)
-df2 = pd.DataFrame(data)
+df2 = pd.DataFrame(data2)
+
+
 
 
 
@@ -83,6 +85,8 @@ df2 = df2.dropna()
 
 df.set_index(['datetime', 'error_status', 'column_c'], inplace =True)
 df2.set_index(['datetime', 'error_status', 'column_c'], inplace =True)
+
+
 
 
 
@@ -125,14 +129,24 @@ for i in np.arange(0, cols_ls_len-1, 1):
     df_name =  str(index2)
     df_dict[df_name] = df_slice2
 
+  
+
     
 
 
 
-concat_df = pd.concat(df_dict)
+concat_df = pd.concat(df_dict)#
+
+
 concat_df.reset_index(inplace =True)
 
+
+
+
+
 concat_df = concat_df.loc[concat_df['card_present_channel'] == True]
+
+
 
 
 
@@ -158,10 +172,11 @@ concat_df.set_index(['datetime','tank_id','error_status'], inplace=True)
 concat_df.to_csv('out.csv')
 concat_df = resample_mean(concat_df, '5T', concat_df.columns, 3)
 concat_df.drop(concat_df.columns[[0, 1, 2]],axis=1,inplace=True)
-print(concat_df)
+
 
 
 concat_df = concat_df.reset_index()
+print(concat_df)
 
 
 
