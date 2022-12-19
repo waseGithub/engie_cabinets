@@ -185,7 +185,10 @@ while True:
                             for word in line_ls:
                                 # print(word)
                                 word_ls = word.split(" ")
-                                log_dict[str(word_ls[0])] = [word_ls[1]]
+                                try:
+                                    log_dict[str(word_ls[0])] = [word_ls[1]]
+                                except IndexError:
+                                    pass
                         print(log_dict)
                             
                     if len(log_dict) > 0:
