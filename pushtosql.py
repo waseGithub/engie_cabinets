@@ -16,16 +16,16 @@ import pandas as pd
 
 
 
-# data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')
-data = pd.read_csv (r'/home/farscopestudent/Documents/WASE/wase-cabinet/flowmeter_push.csv')  
+data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')
+#data = pd.read_csv (r'/home/farscopestudent/Documents/WASE/wase-cabinet/flowmeter_push.csv')  
 df_flow = pd.DataFrame(data)
 
 
 
 
 
-# data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/temp_push.csv')  
-data = pd.read_csv (r'/home/farscopestudent/Documents/WASE/wase-cabinet/temp_push.csv')  
+data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/temp_push.csv')  
+#data = pd.read_csv (r'/home/farscopestudent/Documents/WASE/wase-cabinet/temp_push.csv')  
 df_temp = pd.DataFrame(data)
 
 
