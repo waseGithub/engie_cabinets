@@ -38,8 +38,10 @@ def resample_max(df, time, cols, round_val):
 ######################
 ######################
 ######################
+ 
+# data = pd.read_csv(r'/home/farscopestudent/Documents/WASE/wase-cabinet/file_7.csv') 
+# data2 = pd.read_csv(r'/home/farscopestudent/Documents/WASE/wase-cabinet/file_6.csv') 
 
-# data = pd.read_csv (r'/home/pi/wase-cabinet/file_7.csv')   
 data = pd.read_csv(r'/home/pi/wase-cabinet/file_7.csv') 
 data2 = pd.read_csv(r'/home/pi/wase-cabinet/file_6.csv') 
 df = pd.DataFrame(data)
@@ -155,7 +157,7 @@ concat_df['datetime'] = pd.to_datetime(concat_df['datetime'])
 concat_df.set_index(['datetime','tank_id','error_status'], inplace=True)
 concat_df.to_csv('out.csv')
 concat_df = resample_mean(concat_df, '5T', concat_df.columns, 3)
-concat_df.drop(concat_df.columns[[0]],axis=1,inplace=True)
+concat_df.drop(concat_df.columns[[0, 1, 2]],axis=1,inplace=True)
 print(concat_df)
 
 
