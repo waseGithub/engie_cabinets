@@ -169,7 +169,7 @@ concat_df['datetime'] = pd.to_datetime(concat_df['datetime'])
 
 
 concat_df.set_index(['datetime','tank_id','error_status'], inplace=True)
-concat_df.to_csv('out.csv')
+
 concat_df = resample_mean(concat_df, '5T', concat_df.columns, 3)
 concat_df.drop(concat_df.columns[[0, 1, 2]],axis=1,inplace=True)
 
@@ -179,12 +179,15 @@ concat_df = concat_df.reset_index()
 print(concat_df)
 
 
+concat_df['Name'] = concat_df['tank_id']
+concat_df['Name'] = concat_df['Name'].replace([1,2,3,4,5,6,15,16,17], ['1B','2B', '3B', '1C', '2C', '3C', '1A', '2A', '3A'])
 
 
 
+
+concat_df.to_csv('out.csv')
 # df.drop(columns=['card_present_channel', 'card_enabled_channel'], inplace = True)
 concat_df['datetime'] = concat_df['datetime'].dt.strftime('%Y-%m-%d %H:%M:%S')
-
 
 cnx = mysql.connector.connect(user='root', password='wase2022', host='34.89.81.147', database='cabinet_datasets')
 cursor = cnx.cursor()
