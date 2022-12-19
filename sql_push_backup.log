@@ -58929,3 +58929,450 @@ Traceback (most recent call last):
   File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
     raise get_mysql_exception(
 mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'SD' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'SD' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'SD' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'SD' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'SD' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'SD' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'SD' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'SD' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'SD' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'SD' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'SD' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'SD' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'SD' in 'field list'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 19, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    return parser.read(nrows)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1778, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 230, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 808, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 866, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 852, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 1973, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 2 fields in line 3, saw 14
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 19, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    return parser.read(nrows)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1778, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 230, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 808, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 866, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 852, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 1973, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 2 fields in line 3, saw 14
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 19, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    return parser.read(nrows)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1778, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 230, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 808, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 866, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 852, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 1973, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 2 fields in line 3, saw 14
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 19, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 19, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 19, in <module>
+    data = pd.read_csv (r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')   
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wase-cabinet/wase-cabinet/flowmeter_push.csv'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'
+Traceback (most recent call last):
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 565, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'inf' in 'field list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "wase-cabinet/pushtosql.py", line 36, in <module>
+    cursor.execute(sql, tuple(row))
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 279, in execute
+    result = self._cnx.cmd_query(
+  File "/home/wase-cabinet/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 573, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'inf' in 'field list'

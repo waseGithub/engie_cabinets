@@ -1,3 +1,0 @@
-datetime,Channel,Name,timestamp,tempC,pressurehPa,total_tips_since_start,volume_this_tipml,total_vol_since_startml,tips_this_day,vol_this_dayml,tips_this_hour,vol_this_hourml,net_gas_attributable_to_test_sample_since_startmlg
-2022-12-08 16:07:33.518012,7,sleepy,12881,22.50,1001.96,1,4.72,4.72,1,4.72,1,4.72,1.20
-2022-12-08 16:07:49.339615,5,sneezy,28719,22.50,1001.96,1,4.57,4.57,1,4.57,1,4.57,1.89
