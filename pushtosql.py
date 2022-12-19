@@ -201,4 +201,5 @@ my_cursor = cnx.cursor()
 cnx.close()
 
 
-# os.remove(r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')
+os.remove(r'/home/wase-cabinet/wase-cabinet/file_6.csv')
+os.remove(r'/home/wase-cabinet/wase-cabinet/file_7.csv')
