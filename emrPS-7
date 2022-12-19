@@ -2,7 +2,7 @@
 
 # configure address and interval
 addr="192.168.100.7"
-interval=5
+interval=120
 
 # this function converts json for a single card into csv
 function card2csv {
@@ -46,6 +46,8 @@ fi
 done
 echo $entry
 echo $entry >> /home/pi/wase-cabinet/file_7.csv
+echo $entry >> /home/pi/wase-cabinet/file_7_backup.csv
+
 #printf $entry 
 return
 }
