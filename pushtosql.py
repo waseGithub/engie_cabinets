@@ -40,8 +40,8 @@ def resample_max(df, time, cols, round_val):
 ######################
 
 # data = pd.read_csv (r'/home/pi/wase-cabinet/file_7.csv')   
-data = pd.read_csv(r'/home/farscopestudent/Documents/WASE/wase-cabinet/file_7.csv') 
-data2 = pd.read_csv(r'/home/farscopestudent/Documents/WASE/wase-cabinet/file_6.csv') 
+data = pd.read_csv(r'/home/pi/wase-cabinet/file_7.csv') 
+data2 = pd.read_csv(r'/home/pi/wase-cabinet/file_6.csv') 
 df = pd.DataFrame(data)
 df2 = pd.DataFrame(data)
 
