@@ -45,7 +45,7 @@ entry="$entry,"
 fi
 done
 echo $entry
-echo $entry >> /home/pi/barrel_experiment/file_7.csv
+echo $entry >> /home/pi/wase-cabinet/file_7.csv
 #printf $entry 
 return
 }

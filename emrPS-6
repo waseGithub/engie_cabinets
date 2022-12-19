@@ -47,7 +47,7 @@ done
 
 #$entry >> file_6.csv
 echo $entry
-echo $entry >> file_6.csv 
+echo $entry >> /home/pi/wase-cabinet/file_6.csv 
 return
 }
 
