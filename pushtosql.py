@@ -201,5 +201,5 @@ my_cursor = cnx.cursor()
 cnx.close()
 
 
-os.remove(r'/home/wase-cabinet/wase-cabinet/file_6.csv')
-os.remove(r'/home/wase-cabinet/wase-cabinet/file_7.csv')
+os.remove(r'/home/pi/wase-cabinet/file_6.csv')
+os.remove(r'/home/pi/wase-cabinet/file_7.csv')
