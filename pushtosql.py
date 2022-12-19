@@ -180,7 +180,7 @@ print(concat_df)
 
 
 concat_df['Name'] = concat_df['tank_id']
-concat_df['Name'] = concat_df['Name'].replace([1,2,3,4,5,6,15,16,17], ['1B','2B', '3B', '1C', '2C', '3C', '1A', '2A', '3A'])
+concat_df['Name'] = concat_df['Name'].replace(['1','2','3','4','5','6','15','16','17'], ['1B','2B', '3B', '1C', '2C', '3C', '1A', '2A', '3A'])
 
 
 
