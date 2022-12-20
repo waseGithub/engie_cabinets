@@ -100,6 +100,7 @@ for i,row in df_temp.iterrows():
     sql = "INSERT INTO `temperature` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
     cursor.execute(sql, tuple(row))
     cnx.commit()
+    os.remove(r'/home/wase-cabinet/wase-cabinet/temp_push.csv')
  
 
 cursor = cnx.cursor()
@@ -108,6 +109,7 @@ for i,row in df_flow.iterrows():
     sql = "INSERT INTO `flowmeter` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
     cursor.execute(sql, tuple(row))
     cnx.commit()
+    os.remove(r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')
 
 
 
@@ -126,5 +128,5 @@ my_cursor = cnx.cursor()
 
 # Close the connection
 cnx.close()
-os.remove(r'/home/wase-cabinet/wase-cabinet/flowmeter_push.csv')
-os.remove(r'/home/wase-cabinet/wase-cabinet/temp_push.csv')
+
+
