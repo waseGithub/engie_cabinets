@@ -1,3 +1,4 @@
+datetime,Channel,Name,timestamp,tempC,pressurehPa,total_tips_since_start,volume_this_tipml,total_vol_since_startml,tips_this_day,vol_this_dayml,tips_this_hour,vol_this_hourml,net_gas_attributable_to_test_sample_since_startmlg
 2022-12-20 12:58:17,8,1A,64806860,23.50,999.13,72,7.49,537.57,72,537.57,1,7.49,inf
 2022-12-20 13:00:48,10,1B,64958037,23.25,999.15,112,8.63,963.20,112,963.20,1,8.63,inf
 2022-12-20 13:01:05,4,4B,64975147,23.25,999.13,116,8.63,997.64,116,997.64,1,8.63,inf
