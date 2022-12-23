@@ -43,6 +43,7 @@ def resample_sum(df, time, cols, round_val, level_name):
   return df
 
 def resample_max(df, time, cols, round_val, level_name):
+  print(df)
   df= df[(df.astype(float) >= 0.0).all(1)]
   df = df.groupby([pd.Grouper(freq=time, level='datetime'), pd.Grouper(level=level_name)])[cols].max()
   df = df.round(round_val)
