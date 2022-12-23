@@ -61,7 +61,7 @@ df_temp['datetime'] = pd.to_datetime(df_temp['datetime'], errors='coerce')
 df_temp.set_index(['probe_id', 'datetime'], inplace = True)
 ls = list(df_temp.columns)
 df_temp = df_temp.apply(pd.to_numeric, errors='coerce')
-df_temp = resample_mean(df_temp, '5T', ls, 3, 'probe_id')
+df_temp = resample_mean(df_temp, '30T', ls, 3, 'probe_id')
 df_temp.reset_index(inplace=True)
 df_temp['datetime'] = df_temp['datetime'].dt.strftime('%Y-%m-%d %H:%M:%S')
 
@@ -74,11 +74,11 @@ df_flow = df_flow.drop(['net_gas_attributable_to_test_sample_since_startmlg', 't
 df_flow['datetime'] = pd.to_datetime(df_flow['datetime'], errors='coerce')
 
 df_flow.set_index(['datetime', 'Channel', 'Name'], inplace=True)
-df_1 = resample_max(df_flow, '5T', ['total_tips_since_start', 'total_vol_since_startml'], 3, 'Name')
+df_1 = resample_max(df_flow, '30T', ['total_tips_since_start', 'total_vol_since_startml'], 3, 'Name')
 
 'volume_this_tipml'
-df_2 = resample_mean(df_flow, '5T', ['tempC', 'pressurehPa'], 3, 'Name')
-df_3 = resample_sum(df_flow, '5T', ['volume_this_tipml'], 3, 'Name')
+df_2 = resample_mean(df_flow, '30T', ['tempC', 'pressurehPa'], 3, 'Name')
+df_3 = resample_sum(df_flow, '30T', ['volume_this_tipml'], 3, 'Name')
 df_3 = df_3.rename(columns = {'volume_this_tipml' : 'volume_this_tip_intervalml'})
 
 
