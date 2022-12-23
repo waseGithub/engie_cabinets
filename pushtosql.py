@@ -16,7 +16,7 @@ import pandas as pd
 
 
 colnames = ['datetime','Channel','Name','timestamp','tempC','pressurehPa','total_tips_since_start','volume_this_tipml','total_vol_since_startml','tips_this_day','vol_this_dayml','tips_this_hour','vol_this_hourml','net_gas_attributable_to_test_sample_since_startmlg']
-data = pd.read_csv ('/home/wase-cabinet/wase-cabinet/flowmeter_push.csv',  names=colnames, on_bad_lines='skip')
+data = pd.read_csv ('/home/wase-cabinet/wase-cabinet/flowmeter_push.csv',  names=colnames, on_bad_lines='skip',skiprows=2 )
 #data = pd.read_csv (r'/home/farscopestudent/Documents/WASE/wase-cabinet/flowmeter_push.csv')  
 df_flow = pd.DataFrame(data)
 
