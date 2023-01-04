@@ -6,6 +6,42 @@ import seaborn as sns
 import plotly.graph_objects as go
 
 
+def plot_plotly():
+  y_axis = 'Module Current'
+  fig = go.Figure()
+    # df[column] = df[column][(df[[column]] < 30000).all(1)]
+    #  df[column] = df[column][(df[[column]] > 0).all(1)]
+    
+  try:
+    df.reset_index(inplace = True)
+  except ValueError:
+    pass
+
+  for i in reactor_names:
+    print(i)
+    fig.add_trace(go.Scatter(
+            x=df[df['Name'] == i]['datetime'],
+            y=df[df['Name'] == i]['card_current_channel'],
+            name = 'Tank' + str(i),
+            line_shape='spline',
+            connectgaps= False,
+            line=dict(color= colours_dict.get(i))
+        # Style name/legend entry with html tags
+        ))
+
+  fig.update_yaxes(showline=True, linewidth=2, gridcolor='lightgray', linecolor='black')
+  fig.update_xaxes(showline=True, linewidth=2, gridcolor='lightgray', linecolor='black')
+  fig.update_layout(legend=dict(orientation="v",yanchor="top",y=0.99,xanchor="right",x=1.01))
+  fig.update_layout(template = "plotly_white", width=1000, height=600, yaxis_title=y_axis,font=dict(size=15), margin=dict(l=50,r=50,b=50,t=50,pad=3))
+
+  fig.show()
+
+
+
+
+
+
+
 
 
 #connect to mysql database
@@ -53,36 +89,10 @@ print(current_db)
 
 
 df = current_db
+plot_plotly()
 
 
-y_axis = 'Module Current'
-fig = go.Figure()
-  # df[column] = df[column][(df[[column]] < 30000).all(1)]
-  #  df[column] = df[column][(df[[column]] > 0).all(1)]
-  
-try:
-  df.reset_index(inplace = True)
-except ValueError:
-  pass
 
-for i in reactor_names:
-  print(i)
-  fig.add_trace(go.Scatter(
-          x=df[df['Name'] == i]['datetime'],
-          y=df[df['Name'] == i]['card_current_channel'],
-          name = 'Tank' + str(i),
-          line_shape='spline',
-          connectgaps= False,
-          line=dict(color= colours_dict.get(i))
-      # Style name/legend entry with html tags
-      ))
-
-fig.update_yaxes(showline=True, linewidth=2, gridcolor='lightgray', linecolor='black')
-fig.update_xaxes(showline=True, linewidth=2, gridcolor='lightgray', linecolor='black')
-fig.update_layout(legend=dict(orientation="v",yanchor="top",y=0.99,xanchor="right",x=1.01))
-fig.update_layout(template = "plotly_white", width=1000, height=600, yaxis_title=y_axis,font=dict(size=15), margin=dict(l=50,r=50,b=50,t=50,pad=3))
-
-fig.show()
 
 
 
