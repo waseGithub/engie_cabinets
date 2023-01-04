@@ -238,7 +238,7 @@ dcc.Interval
 app.layout = html.Div(id = 'parent', children = [
     html.H1(id = 'H1', children = 'Cabinet Reactor data', style = {'textAlign':'center','marginTop':40,'marginBottom':1}),
        
-        dcc.Dropdown( id = 'dropdown',
+        dcc.Dropdown( id = 'drop',
         options = [
             {'label':'Current', 'value':fig_current},
             {'label':'Flow', 'value':fig_flow},
@@ -251,7 +251,7 @@ app.layout = html.Div(id = 'parent', children = [
     
     
 @app.callback(Output(component_id='bar_plot', component_property= 'figure'),
-              [Input(component_id='dropdown', component_property= 'value')])
+              [Input(component_id='drop', component_property= 'value')])
 
 def graph_update(dropdown_value):
     print(dropdown_value)
