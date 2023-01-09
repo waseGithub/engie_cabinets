@@ -75,8 +75,10 @@ def arduino_read(port):
 
             if not file_exists:
                 writer.writerow(headers)  # file doesn't exist yet, write a header
-
-            writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
+            try:
+                writer.writerow([now,data[0:5], temp_dict[data[16:18]]])
+            except KeyError:
+                pass
 
 
 
