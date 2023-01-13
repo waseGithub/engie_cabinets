@@ -149,9 +149,9 @@ cnx = mysql.connector.connect(user='root', password='wase2022', host='34.89.81.1
 
 
 cursor = cnx.cursor()
-cols = "`,`".join([str(i) for i in rs_current_data.columns.tolist()])
+cols = "`,`".join([str(i) for i in rpower_df.columns.tolist()])
 for i,row in power_df.iterrows():
-    sql = "INSERT INTO `temperature` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
+    sql = "INSERT INTO `rs_current_data` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
     cursor.execute(sql, tuple(row))
     cnx.commit()
 
