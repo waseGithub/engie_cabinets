@@ -86,7 +86,7 @@ def append_rs_csv_to_ls(df, tank_names_ls):
     concat_df = pd.concat(single_tank_ls, axis=0)
     concat_df.reset_index(inplace=True)
     concat_df.set_index(['datetime', 'ID'], inplace=True)
-    concat_df = concat_df.groupby([pd.Grouper(freq='5T', level='datetime'), pd.Grouper(level='ID')])['V', 'A', 'P'].mean()  
+    concat_df = concat_df.groupby([pd.Grouper(freq='30T', level='datetime'), pd.Grouper(level='ID')])['V', 'A', 'P'].mean()  
 
 
 
@@ -119,7 +119,7 @@ df_bot= format_rs_csv(link_ls[0])
 df_mid = format_rs_csv(link_ls[1])
 df_top = format_rs_csv(link_ls[2])
 
-
+# power supplies middle and bottom were set to timezone an hour out - this adjusts them to the current time zone
 df_bot = df_bot.shift(periods=-1, freq="60T")
 df_mid = df_mid.shift(periods=-1, freq="60T")
 
