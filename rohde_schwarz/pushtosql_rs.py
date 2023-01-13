@@ -86,7 +86,7 @@ def append_rs_csv_to_ls(df, tank_names_ls):
     concat_df = pd.concat(single_tank_ls, axis=0)
     concat_df.reset_index(inplace=True)
     concat_df.set_index(['datetime', 'ID'], inplace=True)
-    concat_df = concat_df.groupby([pd.Grouper(freq='30T', level='datetime'), pd.Grouper(level='ID')])['V', 'A', 'P'].mean()  
+    concat_df = concat_df.groupby([pd.Grouper(freq='5T', level='datetime'), pd.Grouper(level='ID')])['V', 'A', 'P'].mean()  
 
     # if df == df_bot | df == df_mid: 
     #     df = df.shift(periods=-2)
