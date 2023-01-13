@@ -120,8 +120,8 @@ df_mid = format_rs_csv(link_ls[1])
 df_top = format_rs_csv(link_ls[2])
 
 
-df_bot = df_bot.shift(periods=-12)
-df_mid = df_mid.shift(periods=-12)
+df_bot = df_bot.shift(periods=-1, freq="60T")
+df_mid = df_mid.shift(periods=-1, freq="60T")
 
 
 
