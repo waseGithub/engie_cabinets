@@ -14,16 +14,26 @@ from pathlib import Path
 
 
 
+barrels_postion = {'2C':1, '2B':1,'1B':3, '1A':1, '3B':2, '2A':2, '3C':3, '1C':4, '3A':4}
 
-path2csv = Path("/home/farscopestudent/Documents/WASE/wase-cabinet/rohde_schwarz")
-destination_power = Path('/home/farscopestudent/Documents/WASE/wase-cabinet/rohde_schwarz/rs_out')
-csvlist = path2csv.glob("*.csv")
-power_ls = []
 
-for csv in csvlist:
+def format_rs_csv(csvdest):
+    path2csv = Path(csvdest)
+    csvlist = path2csv.glob("*.csv")
+
+    for i in csvlist:
+        print(i)
+        csvlist = [] 
+        csvlist.append(i)
+
+
+    csv = csvlist[0]
+
     df_header = pd.read_csv(csv, nrows=14, names=['attribute', 'data'])
     colnames = ["Timestamp","U1[V]","I1[A]","P1[W]","U2[V]","I2[A]","P2[W]","U3[V]","I3[A]","P3[W]","U4[V]","I4[A]","P4[W]"]
     df = pd.read_csv(csv, skiprows=16, names=colnames)
+    # print(df)
+
 
     start_time = df_header[df_header['attribute'] == '#Start Time'].data.values[0]
     start_date = df_header[df_header['attribute'] == '#Date'].data.values[0]
@@ -33,40 +43,114 @@ for csv in csvlist:
     count_row = df.shape[0] 
     duration = increment * (count_row)
     end_datetime= pd.to_datetime(start_datetime) + pd.to_timedelta(duration,'m')
-    # print(duration)
-    # print(count_row)    
-    # print("start time", start_datetime)
-    # print("end time", end_datetime)
+        # print(duration)
+        # print(count_row)    
+        # print("start time", start_datetime)
+        # print("end time", end_datetime)
 
     ls_datetime_range = pd.date_range(start=start_datetime, periods=count_row, freq='5Min')
     df_datetimes = pd.DataFrame(ls_datetime_range, columns=['datetime'])
     df = pd.concat([df, df_datetimes], axis=1)
     df.set_index('datetime', inplace =True)
-    tank_1 = df[["U1[V]", "I1[A]", "P1[W]"]]
-    tank_1['ID'] = 1
-    tank_1 = tank_1.rename(columns={'U1[V]': 'V', 'I1[A]': 'A', 'P1[W]': 'P'})
-    tank_2 = df[["U2[V]", "I2[A]", "P2[W]"]]
-    tank_2['ID'] = 2
-    tank_2 = tank_2.rename(columns={'U2[V]': 'V', 'I2[A]': 'A', 'P2[W]': 'P'})
-    tank_3 = df[["U3[V]", "I3[A]", "P3[W]"]]
-    tank_3['ID'] = 3
-    tank_3 = tank_3.rename(columns={'U3[V]': 'V', 'I3[A]': 'A', 'P3[W]': 'P'})
-    tank_4 = df[["U4[V]", "I4[A]", "P4[W]"]]
-    tank_4['ID'] = 4
-    tank_4 = tank_4.rename(columns={'U4[V]': 'V', 'I4[A]': 'A', 'P4[W]': 'P'})
+    return df
 
-    df = pd.concat([tank_1, tank_2, tank_3, tank_4], axis=0) 
-    df.reset_index(inplace=True)
-    df.set_index(['datetime', 'ID'], inplace=True)
-    df = df.groupby([pd.Grouper(freq='5T', level='datetime'), pd.Grouper(level='ID')])['V', 'A', 'P'].mean()   
-    power_ls.append(df)
+
+
+
 
     
-print(power_ls)
-  
+def append_rs_csv_to_ls(df, tank_names_ls):
+
+    single_tank_ls = []
+    for tank in tank_names_ls:
+        print(tank)
+        index_value = barrels_postion.get(tank)
+        print(index_value)
+
+        single_tank_df = df[["U" + str(index_value) + "[V]", "I" + str(index_value) +"[A]", "P" + str(index_value) + "[W]"]]
+
+        
+        # single_tank_df['ID'] = tank
+        single_tank_df.insert(1, "ID", tank, True)
+
+      
+
+
+        # single_tank_df.loc['ID'] = tank
+        
+        single_tank_df = single_tank_df.rename(columns={"U" + str(index_value) + "[V]" :'V', "I" + str(index_value) +"[A]" : 'A', "P" + str(index_value) + "[W]":'P'})
+        single_tank_ls.append(single_tank_df)
+    concat_df = pd.concat(single_tank_ls, axis=0)
+    concat_df.reset_index(inplace=True)
+    concat_df.set_index(['datetime', 'ID'], inplace=True)
+    concat_df = concat_df.groupby([pd.Grouper(freq='5T', level='datetime'), pd.Grouper(level='ID')])['V', 'A', 'P'].mean()  
+    return concat_df
+    
+
+
+    # tank_1 = df[["U1[V]", "I1[A]", "P1[W]"]]
+    # tank_1['ID'] = 1
+    # tank_1 = tank_1.rename(columns={'U1[V]': 'V', 'I1[A]': 'A', 'P1[W]': 'P'})
+    # tank_2 = df[["U2[V]", "I2[A]", "P2[W]"]]
+    # tank_2['ID'] = 2
+    # tank_2 = tank_2.rename(columns={'U2[V]': 'V', 'I2[A]': 'A', 'P2[W]': 'P'})
+    # tank_3 = df[["U3[V]", "I3[A]", "P3[W]"]]
+    # tank_3['ID'] = 3
+    # tank_3 = tank_3.rename(columns={'U3[V]': 'V', 'I3[A]': 'A', 'P3[W]': 'P'})
+    # tank_4 = df[["U4[V]", "I4[A]", "P4[W]"]]
+    # tank_4['ID'] = 4
+    # tank_4 = tank_4.rename(columns={'U4[V]': 'V', 'I4[A]': 'A', 'P4[W]': 'P'})
+
+    # df = pd.concat([tank_1, tank_2, tank_3, tank_4], axis=0) 
+    # df.reset_index(inplace=True)
+    # df.set_index(['datetime', 'ID'], inplace=True)
+    # df = df.groupby([pd.Grouper(freq='5T', level='datetime'), pd.Grouper(level='ID')])['V', 'A', 'P'].mean()   
+    # return df
 
 
 
+
+power_ls = []    
+# print(power_ls)
+
+
+
+#########
+#########
+
+
+# psu_pathtop = '/home/farscopestudent/Documents/WASE/wase-cabinet/rohde_schwarz'
+# psu_pathmid = '/home/farscopestudent/Documents/WASE/wase-cabinet/rohde_schwarz'
+# psu_pathbot = '/home/farscopestudent/Documents/WASE/wase-cabinet/rohde_schwarz'
+
+psu_pathtop = '/run/user/1000/gvfs/ftp:host=192.168.100.107,user=toppsu/int/logging'
+psu_pathmid = '/run/user/1000/gvfs/ftp:host=192.168.100.104,user=midpsu/int/logging'
+psu_pathbot = '/run/user/1000/gvfs/ftp:host=192.168.100.103,user=botpsu/int/logging'
+
+link_ls = [psu_pathbot, psu_pathmid, psu_pathtop]
+
+df_bot= format_rs_csv(link_ls[0])
+df_mid = format_rs_csv(link_ls[1])
+df_top = format_rs_csv(link_ls[2])
+
+
+
+
+
+
+df_bot = append_rs_csv_to_ls(df_bot, ['1A', '2A', '1B', '3A'])
+df_mid = append_rs_csv_to_ls(df_mid, ['2B', '3B', '3C', '1C'])
+df_top = append_rs_csv_to_ls(df_top, ['2C'])
+
+df_ls = [df_bot , df_mid , df_top]
+power_df = pd.concat(df_ls, axis=0) 
+
+
+print(power_df)
+
+
+
+ 
 
 
 
