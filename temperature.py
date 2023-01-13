@@ -58,7 +58,7 @@ print('Temp arduino as port:')
 print(Megas)
 ser1 = serial.Serial(str(Megas[0]),  9600, timeout = 25)
 
-temp_dict = {'71':'TA', '8B':'TB', '7F':'TC', '68':'TD'}
+temp_dict = {'71':'TA', '8B':'TB', '7F':'TC', 'F3':'TD'}
 
 
 def arduino_read(port):
