@@ -138,6 +138,7 @@ power_df = pd.concat(df_ls, axis=0)
 print(power_df)
 power_df.reset_index(inplace=True)
 power_df = power_df.rename(columns={"V": "voltageV", "A": "currentA", "P": "powerP", 'ID':'Name'})
+print(power_df)
 
 
 
