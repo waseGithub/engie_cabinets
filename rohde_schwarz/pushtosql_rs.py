@@ -53,7 +53,7 @@ def format_rs_csv(csvdest):
     df_datetimes = pd.DataFrame(ls_datetime_range, columns=['datetime'])
     df = pd.concat([df, df_datetimes], axis=1)
     df.set_index('datetime', inplace =True)
-    df = df.tail(6)
+    # df = df.tail(6)
 
     return df
 
