@@ -49,7 +49,11 @@ Megas = []
 unos = []
 for port, desc, hwid in sorted(ports):
         print("{}: {} [{}]".format(port, desc, hwid))
-        if '9503830353135190A221' in hwid:
+        if '85130303338351803031' in hwid:
+          print('Requested device found temperature arduino')
+          print(port)
+          Megas.append(port)
+        elif '9503830353135190A221' in hwid:
           print('Requested device found temperature arduino')
           print(port)
           Megas.append(port)
@@ -57,6 +61,7 @@ for port, desc, hwid in sorted(ports):
 print('Temp arduino as port:')          
 print(Megas)
 ser1 = serial.Serial(str(Megas[0]),  9600, timeout = 25)
+ser2 = serial.Serial(str(Megas[1]),  9600, timeout = 25)
 
 temp_dict = {'71':'TA', '8B':'TB', '7F':'TC', 'F3':'TD'}
 
@@ -107,6 +112,8 @@ def arduino_read(port):
 
 while(True):
     arduino_read(ser1)
+    arduino_read(ser2)
+    
 
     
    
