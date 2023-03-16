@@ -17,7 +17,7 @@ Megas = []
 unos = []
 for port, desc, hwid in sorted(ports):
         print("{}: {} [{}]".format(port, desc, hwid))
-        if '85036313130351F01161' in hwid:
+        if '55130303335351B012D1' in hwid:
           print('Requested device found anaero arduino')
           print(port)
           Megas.append(port)
@@ -61,9 +61,12 @@ else:
             print('')
             print('To delete existing log files on SD card and start new run, press d followed by the Enter key... ')
             print('')
-          
+            var = 'd'
 
-
+if var == 'D' or var == 'd':
+    ser.write(b'N')
+else:
+    ser.write(b'Y')
 
     
 while line != b'starting eventlog.csv writeback':
@@ -226,4 +229,5 @@ while True:
                 print('Bye')
                 time.sleep(2)
                 exit(0)
+
 
