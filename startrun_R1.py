@@ -11,11 +11,27 @@ import pandas as pd
 import serial
 import serial.tools.list_ports
 
-ports = list(serial.tools.list_ports.comports())
+ports = serial.tools.list_ports.comports()
+
+Megas = []
+unos = []
+for port, desc, hwid in sorted(ports):
+        print("{}: {} [{}]".format(port, desc, hwid))
+        if '85036313130351F01161' in hwid:
+          print('Requested device found anaero arduino')
+          print(port)
+          Megas.append(port)
+        ###################
+
+
+print('Anaero arduino as port:')          
+print(Megas)
+var = Megas[0]
+
+
 for p in ports:
     print('   ', p, '\n')
 else:
-    var = input('>>> ')
     time.sleep(1)
     ser = serial.Serial()
     try:
