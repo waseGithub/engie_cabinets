@@ -61,12 +61,9 @@ else:
             print('')
             print('To delete existing log files on SD card and start new run, press d followed by the Enter key... ')
             print('')
-            var = 'd'
+          
 
-if var == 'D' or var == 'd':
-    ser.write(b'N')
-else:
-    ser.write(b'Y')
+
 
     
 while line != b'starting eventlog.csv writeback':
